@@ -38,9 +38,6 @@ local Window = Rayfield:CreateWindow({
     Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Stratxgy/StratWare/main/Aimbot.lua"))()
-    
-    
-
     end,
  })
 
@@ -107,7 +104,9 @@ ESP.ShowDistance = true;
         SkeletonsColor = Color3.new(1, 1, 1),
         TracerPosition = "Bottom",
     }
+    ermm yep thats about it
 ]]
+            
 end,
  })
  local ColorPicker = VisualsTab:CreateColorPicker({
