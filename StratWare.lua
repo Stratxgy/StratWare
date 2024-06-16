@@ -66,7 +66,7 @@ ESP.ShowName = true;
 ESP.ShowHealth = true;
 
 --// Enable tracers
-ESP.ShowTracer = true;
+ESP.ShowTracer = false;
 
 --// Enable Distance
 ESP.ShowDistance = true;
