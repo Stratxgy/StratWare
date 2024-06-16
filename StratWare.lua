@@ -48,7 +48,7 @@ local Window = Rayfield:CreateWindow({
   local Button = VisualsTab:CreateButton({
    Name = "ESP",
    Callback = function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Stratxgy/StratWare/main/ESP.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/linemaster2/esp-library/main/library.lua"))();
 
 --// Master switch
 ESP.Enabled = true;
@@ -66,20 +66,20 @@ ESP.ShowName = true;
 ESP.ShowHealth = true;
 
 --// Enable tracers
-ESP.ShowTracer = false;
+ESP.ShowTracer = true;
 
 --// Enable Distance
-ESP.ShowDistance = false;
+ESP.ShowDistance = true;
+
+--[[
+    Enable skeletons: (currently broken)
+    ESP.ShowSkeletons = true;
+]]
 
 
-   -- Enable skeletons: (currently broken)
-    -- ESP.ShowSkeletons = true;
 
-
-
-
-
-   -- These are all the settings
+--[[
+    These are all the settings
     local ESP_SETTINGS = {
         BoxOutlineColor = Color3.new(0, 0, 0),
         BoxColor = Color3.new(1, 1, 1),
@@ -88,9 +88,9 @@ ESP.ShowDistance = false;
         HealthHighColor = Color3.new(0, 1, 0),
         HealthLowColor = Color3.new(1, 0, 0),
         CharSize = Vector2.new(4, 6),
-        Teamcheck = true,
+        Teamcheck = false,
         WallCheck = false,
-        Enabled = true,
+        Enabled = false,
         ShowBox = false,
         BoxType = "2D",
         ShowName = false,
@@ -103,12 +103,13 @@ ESP.ShowDistance = false;
         SkeletonsColor = Color3.new(1, 1, 1),
         TracerPosition = "Bottom",
     }
+]]
 
    end,
 })
             
  local ColorPicker = VisualsTab:CreateColorPicker({
-    Name = "ESP Color (doesnt work but if someone tells me how ill update)",
+    Name = "ESP Color",
     Color = Color3.fromRGB(255,255,255),
     Flag = "ColorPicker1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
