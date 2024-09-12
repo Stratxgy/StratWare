@@ -10,5 +10,6 @@ also https://www.youtube.com/channel/UCq8a1Q5l8xqsRObMmyAaMaw
 
 
 RIP StratWare🫡🫡🫡 
+BECAUSE STRATWARE GOT RECODED LETS GOOOO
 https://github.com/Stratxgy/StratWare-Recode 🫡
 
